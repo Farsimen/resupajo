@@ -19,7 +19,27 @@
     </div>
   </header>
 
-  <section id="about">
+  <section id="tiles-container">
+    <div class="tile" data-content="#about">
+      <h2>About Me</h2>
+      <p>Click to view more</p>
+    </div>
+    <div class="tile" data-content="#experience">
+      <h2>Experience</h2>
+      <p>Click to view more</p>
+    </div>
+    <div class="tile" data-content="#skills">
+      <h2>Skills</h2>
+      <p>Click to view more</p>
+    </div>
+    <div class="tile" data-content="#projects">
+      <h2>Projects</h2>
+      <p>Click to view more</p>
+    </div>
+  </section>
+
+  <!-- Hidden Content Sections -->
+  <section id="about" class="hidden-content">
     <h2>About Me</h2>
     <p>
       I'm a tech-savvy entrepreneur and network specialist with over 13 years of experience in building digital solutions. Founder of <strong>Bns</strong>, a personal startup focused on secure internet access, VPN services, and digital infrastructure using <strong>Cloudflare, OpenVPN, WireGuard, and Linux</strong>. Passionate about cloud systems, automation, and creating scalable online services.
@@ -29,7 +49,7 @@
     </p>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="hidden-content">
     <h2>Experience</h2>
     <div class="job">
       <h3>Founder & Technical Manager – Bns (VPN Startup)</h3>
@@ -41,22 +61,43 @@
       </ul>
     </div>
     <div class="job">
-      <h3>Website Support – tegralandshop.ir</h3>
+      <h3>Website Support & Maintenance – tegralandshop.ir</h3>
       <p><strong>2023 – Present</strong></p>
       <ul>
-        <li>Full management of e-commerce site design, SEO, and growth</li>
+        <li>Full responsibility for design, development, maintenance, and growth of the e-commerce website</li>
+        <li>Implemented SEO strategies, performance optimization, and user experience improvements</li>
       </ul>
     </div>
     <div class="job">
-      <h3>Customer Support – GTC Global Broker</h3>
+      <h3>Customer Support Representative – GTC Global Broker</h3>
       <p><strong>2022 – Present</strong></p>
       <ul>
-        <li>Provided user guidance for Forex & stock trading platforms</li>
+        <li>Provided user support and training for financial market services (Forex & Stocks)</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Brand Representative – Goldiran Media</h3>
+      <p><strong>Feb 2023 – Nov 2024</strong></p>
+      <ul>
+        <li>Represented and promoted digital media products across Gilan province</li>
       </ul>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="skills" class="hidden-content">
+    <h2>Skills</h2>
+    <div class="skill-group">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><strong>Networking & Security:</strong> OpenVPN, WireGuard, DNS, Cloudflare, CDN, Linux Server Management, Firewall, Internet Security</li>
+        <li><strong>Infrastructure & DevOps:</strong> Docker, Nginx, Server Administration, Automation, Telegram Bots</li>
+        <li><strong>Digital Business:</strong> E-commerce, Online Store Management, CRM, Digital Marketing, SEO</li>
+        <li><strong>Tools:</strong> Microsoft Office (Advanced), Microsoft Dynamics, SharePoint, WordPress, Adobe Photoshop, Canvas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="hidden-content">
     <h2>Projects</h2>
     <div class="project">
       <h3>🚀 Bns VPN Service</h3>
@@ -76,5 +117,8 @@
   <footer>
     <p>&copy; 2025 Mohammad Pazhoohesh. Hosted with ❤️ on <strong>Cloudflare Pages</strong>.</p>
   </footer>
+
+  <!-- JavaScript for interactivity -->
+  <script src="script.js"></script>
 </body>
 </html>
